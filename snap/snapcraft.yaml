@@ -72,7 +72,6 @@ parts:
     stage-packages:
       - adb
       - openjdk-17-jre-headless
-      - socat
       - wkhtmltopdf
 
     override-build: |
