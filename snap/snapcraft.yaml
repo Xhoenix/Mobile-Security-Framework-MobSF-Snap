@@ -113,7 +113,7 @@ parts:
 
     override-stage: |
       craftctl default
-      cd $CRAFT_STAGE/usr/lib/jvm/java-17-openjdk-amd64/lib/security/
+      cd $CRAFT_STAGE/usr/lib/jvm/java-17-openjdk-$SNAP_ARCH/lib/security/
       ln -sf ../../../../../../etc/java-17-openjdk/security/blacklisted.certs ./blacklisted.certs
 
     override-prime: |
